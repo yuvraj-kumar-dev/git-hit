@@ -4,13 +4,13 @@ from git import Repo
 import os
 
 DATE = datetime.datetime.now()
-DATE = DATE - datetime.timedelta(days=1)  # Adjust to your required date
+DATE = DATE - datetime.timedelta(days=5)  # Adjust to your required date
 DATE = DATE.strftime('%Y-%m-%d %H:%M:%S')
 
 os.environ['GIT_AUTHOR_DATE'] = DATE
 os.environ['GIT_COMMITTER_DATE'] = DATE
 
-REPO_PATH = 'C:/Users/yuvra/Downloads/git-hit'
+REPO_PATH = 'https://github.com/yuvraj-kumar-dev/flask'
 
 # Function to append new date to JSON file
 def write_json(new_data, filename='data.json'):
